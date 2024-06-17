@@ -21,6 +21,7 @@
 		7F83D2942C2070CD00C97F02 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83D2932C2070CD00C97F02 /* NewsModel.swift */; };
 		7F83D2962C2070E800C97F02 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83D2952C2070E800C97F02 /* NewsViewModel.swift */; };
 		7F83D2992C20719A00C97F02 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83D2982C20719A00C97F02 /* UIColor.swift */; };
+		7F83D29C2C20749300C97F02 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83D29B2C20749300C97F02 /* WebViewController.swift */; };
 		9DAF619B1E5FF155EB8FF807 /* Pods_iOSNews_iOSNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C594C52C0588DAAA51B8C5 /* Pods_iOSNews_iOSNewsUITests.framework */; };
 		C7321D89494EDF46EAFFBF50 /* Pods_iOSNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E5485CE9662CFB46AF72F /* Pods_iOSNews.framework */; };
 		F9F5BBB330AFE01C8EF69E14 /* Pods_iOSNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D0A91DEFD1B17C0CF61121 /* Pods_iOSNewsTests.framework */; };
@@ -66,6 +67,7 @@
 		7F83D2932C2070CD00C97F02 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		7F83D2952C2070E800C97F02 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		7F83D2982C20719A00C97F02 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7F83D29B2C20749300C97F02 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7FEF06E652F56278AE50A3AF /* Pods-iOSNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSNewsTests.release.xcconfig"; path = "Target Support Files/Pods-iOSNewsTests/Pods-iOSNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0C594C52C0588DAAA51B8C5 /* Pods_iOSNews_iOSNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSNews_iOSNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0E5485CE9662CFB46AF72F /* Pods_iOSNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 			children = (
 				7F83D2972C20715700C97F02 /* Common */,
 				7F83D2902C20702800C97F02 /* List */,
+				7F83D29A2C20745700C97F02 /* Webview */,
 				7F83D28F2C206FE900C97F02 /* Entries */,
 				7F14569A2C1F412B00F3FE6E /* Main.storyboard */,
 				7F1456A02C1F412C00F3FE6E /* Assets.xcassets */,
@@ -204,6 +207,14 @@
 				7F83D2982C20719A00C97F02 /* UIColor.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		7F83D29A2C20745700C97F02 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				7F83D29B2C20749300C97F02 /* WebViewController.swift */,
+			);
+			path = Webview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F83D2942C2070CD00C97F02 /* NewsModel.swift in Sources */,
+				7F83D29C2C20749300C97F02 /* WebViewController.swift in Sources */,
 				7F14569F2C1F412B00F3FE6E /* iOSNews.xcdatamodeld in Sources */,
 				7F1456992C1F412B00F3FE6E /* MainViewController.swift in Sources */,
 				7F1456952C1F412B00F3FE6E /* AppDelegate.swift in Sources */,

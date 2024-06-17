@@ -64,9 +64,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let news = viewModel.news(at: indexPath.row)
 
-        if let url = URL(string: news.url) {
-           UIApplication.shared.open(url, options: [:], completionHandler: nil)        
-       }
+        let webViewController = WebViewController()
+        webViewController.newsURL = news.url
+        webViewController.newsTitle = news.title
+        webViewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(webViewController, animated: true)
 
         selectedIndexPaths.insert(indexPath)
         tableView.reloadRows(at: [indexPath], with: .none)
